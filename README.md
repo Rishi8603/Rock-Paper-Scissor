@@ -1,3 +1,4 @@
+👉 <a href="https://rishi8603.github.io/Rock-Paper-Scissor/index.html" target="_blank">Live Demo</a>
 # Rock, Paper, Scissors
 
 This is a simple Rock, Paper, Scissors game implemented in JavaScript, as part of The Odin Project curriculum. The game allows the user to play against the computer by selecting either Rock, Paper, or Scissors, and the winner is determined based on the standard rules of the game.
