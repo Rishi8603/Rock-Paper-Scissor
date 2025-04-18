@@ -18,37 +18,37 @@ function getComputerChoice() {
 
 function getHumanChoice(humanchoice){
   document.getElementById("your-choice").textContent=humanchoice;
+
   let Cchoice = getComputerChoice();
   document.getElementById("computer-choice").textContent = Cchoice ;
 
   if(humanchoice=="🪨" && Cchoice=="🧻"){
     pointC++;
-    document.getElementById("scoreC").textContent=pointC;
   }else if(humanchoice=="🪨" && Cchoice=="✂️"){
     pointH++;
-    document.getElementById("scoreH").textContent=pointH;
   }else if(humanchoice=="🧻" && Cchoice=="🪨"){
     pointH++;
-    document.getElementById("scoreH").textContent=pointH;
   }else if(humanchoice=="🧻" && Cchoice=="✂️"){
     pointC++;
-    document.getElementById("scoreC").textContent=pointC;
   }else if(humanchoice=="✂️" && Cchoice=="🪨"){
     pointC++;
-    document.getElementById("scoreC").textContent=pointC;
   }else if(humanchoice=="✂️" && Cchoice=="🧻"){
     pointH++;
-    document.getElementById("scoreH").textContent=pointH;
   }
 
+  // Update scores on screen
+  document.getElementById("scoreH").textContent = pointH;
+  document.getElementById("scoreC").textContent = pointC;
+
   if(pointC==5 || pointH==5) {
-    //i want to reset the game...but will say who won
-    if(pointC==5) alert("Computer Won");
-    else alert("You Won");
-    pointC = 0;
-    pointH = 0;
-    document.getElementById("scoreH").textContent=0;
-    document.getElementById("scoreC").textContent=0;
+    setTimeout(()=>{
+      if(pointC==5) alert("Computer Won");
+      else alert("You Won");
+      pointC = 0;
+      pointH = 0;
+      document.getElementById("scoreH").textContent=0;
+      document.getElementById("scoreC").textContent=0;
+    }, 100);
   }
 }
 document.getElementById("rst").addEventListener("click",function(){
