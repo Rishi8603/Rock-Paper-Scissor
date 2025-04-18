@@ -1,0 +1,76 @@
+
+body{
+  background-color: rgb(30, 162, 210);
+  font-family: 'Roboto', sans-serif;
+}
+
+
+main{
+  margin-top:120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+h1{
+  font-size: 50px;
+}
+.dsp{
+  background-color: white;
+  width: 300px;
+  height: 100px;
+  background-color: brown;
+  border-radius: 10px;
+  display:flex;
+}
+.You,.Comp{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  border: 1px solid rgb(0, 0, 0);
+  align-items: center;
+}
+.You{
+  border-radius: 10px 0 0 10px; /* round only the left side */
+}
+.Comp{
+  border-radius: 0 10px 10px 0; /* round only the right side */
+}
+.scrY,.resY,.scrC,.resC{
+  flex:1;
+  padding: 13px;
+  white-space: nowrap;
+}
+.r{
+  margin: 20px;
+  height: 30px;
+}
+#rst{
+  padding: 15px;
+  width: 90px;
+  background-color: rebeccapurple;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.user{
+  height: 40px;
+  margin: 20px;
+}
+#rck,#ppr,#scsr{
+  margin: 0px 5px;
+  background-color: yellow;
+  width: 90px;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.credit {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+  color: white;
+  opacity: 0.8;
+}
+a {
+  text-decoration: none;
+}

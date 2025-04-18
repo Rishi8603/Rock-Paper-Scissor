@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPS</title>
+  <link rel="stylesheet" href="paper.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- <p>you gonna select rock/paper/scissor button...and computer will select its own</p> -->
+  <!-- <p>winner will get one point 😃</p> -->
+  <main>
+    <h1>🪨 - 🧻 - ✂️</h1>
+    <div class="dsp">
+      <div class="You">
+        <div class="resY">You:<span id="your-choice">--</span></div>
+        <div class="scrY">Score: <span id="scoreH">0</span>(5)</div>
+      </div>
+      <div class="Comp">
+        <div class="resC">Computer:<span id="computer-choice">--</span></div>
+        <div class="scrC">Score: <span id="scoreC">0</span>(5)</div>
+      </div>
+    </div>
+  
+    <div class="r">
+      <button id="rst">RESET</button>
+    </div>
+    <div class="user">
+      <button id="rck" >ROCK</button>
+      <button id="ppr" >PAPER</button>
+      <button id="scsr" >SCISSOR</button>
+    </div>
+  </main>
+  <footer class="credit">
+    Created by <a href="https://github.com/Rishi8603" target="_blank">@Rishi</a>
+  </footer>
+  
+  <script src="scissor.js"></script>
+</body>
+</html>
